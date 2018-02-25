@@ -5,12 +5,6 @@
     <artifactId>bzr2git</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-        <httpobjects-version>0.13.0</httpobjects-version>
-        <jackson-version>2.4.2</jackson-version>
-        
-    </properties>
-
     <build>
 
         <sourceDirectory>src/main/scala</sourceDirectory>
