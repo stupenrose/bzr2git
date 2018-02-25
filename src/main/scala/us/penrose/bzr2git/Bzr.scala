@@ -28,14 +28,9 @@ object Bzr {
         }
       }
     }
-    
   }
   
-  
-  
-  
   private def parseTime(text:String) = {
-    println(text)
     val pattern = "[A-Z][a-z][a-z] ([0-9]*)-([0-9]*)-([0-9]*) ([0-9]*):([0-9]*):([0-9]*) (.*)".r
     val odt = text match {
       case pattern(year, month, day, hour, minute, second, offset) => {
@@ -44,7 +39,6 @@ object Bzr {
         date.atTime(time)
       }
     }
-    println(odt + " vs " + text)
     odt
   }
   
